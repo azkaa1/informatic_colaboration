@@ -1,0 +1,72 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f1f5f9;
+}
+
+/* Sidebar kiri */
+.sidebar-left {
+  width: 220px;
+  background-color: #4f46e5;
+  color: #fff;
+  position: fixed;
+  top: 56px;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar-left a {
+  color: #cbd5e1;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+  transition: color 0.2s;
+}
+
+.sidebar-left a:hover {
+  color: #fff;
+}
+
+/* Topbar */
+.topbar {
+  height: 56px;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.topbar .search-box {
+  max-width: 300px;
+  margin-left: auto;
+}
+
+/* Konten utama */
+.main-content {
+  margin-left: 220px;
+  margin-top: 56px;
+  padding: 30px;
+  text-align: center;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 991px) {
+  .sidebar-left {
+    display: none;
+  }
+
+  .main-content {
+    margin: 70px 20px;
+  }
+}

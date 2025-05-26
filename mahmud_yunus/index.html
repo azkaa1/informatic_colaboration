@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Facebook</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background: #f0f2f5;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .logo {
+      color: #1877f2;
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .login-box {
+      background: white;
+      padding: 20px;
+      width: 360px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 10px;
+      border: 1px solid #dddfe2;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .login-box button {
+      width: 100%;
+      background: #1877f2;
+      color: white;
+      padding: 14px;
+      font-size: 18px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .login-box button:hover {
+      background: #166fe5;
+    }
+
+    .login-box .link {
+      text-align: center;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+
+    .login-box .link a {
+      color: #1877f2;
+      text-decoration: none;
+    }
+
+    .login-box .link a:hover {
+      text-decoration: underline;
+    }
+
+    .divider {
+      border-top: 1px solid #dddfe2;
+      margin: 20px 0;
+    }
+
+    .create-btn {
+      background: #42b72a;
+      margin-top: 10px;
+    }
+
+    .create-btn:hover {
+      background: #36a420;
+    }
+
+    @media (max-width: 400px) {
+      .login-box {
+        width: 90%;
+      }
+
+      .logo {
+        font-size: 36px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>p</h1>
+  <div class="container">
+    <div class="logo">facebook</div>
+    <div class="subtitle">Connect with friends and the world around you on Facebook.</div>
+
+    <div class="login-box">
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" placeholder="Password" />
+      <a href="dashboard.html"><button>Log In</button></a>
+      <div class="link">
+        <a href="#">Forgotten password?</a>
+      </div>
+      <div class="divider"></div>
+      <button class="create-btn">Create New Account</button>
+    </div>
+  </div>
 </body>
 </html>
